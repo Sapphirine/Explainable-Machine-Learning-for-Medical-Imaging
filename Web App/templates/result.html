@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brain Tumor Classification</title>
+    <link rel="stylesheet" href="/static/css/semantic.min.css" type="text/css">
+</head>
+<body>
+    <div class="ui container">
+        <h1 class="header">Brain Tumor Classification</nav>
+        <hr>
+        <div class="ui container">
+            <div class="ui two column padded centred grid">
+                <div class="column">
+                    <img class="ui medium rounded centered image" src="{{ uploaded_img }}">
+                    <h3 class="ui third centered header">Uploaded Image</h3>
+                </div>
+                <div class="column">
+                    <img class="ui medium rounded centered image" src="{{ preprocessed_img }}">
+                    <h3 class="ui third centered header">Classification Result</h3>    
+                </div>
+                <div class="ui right">
+                    <div class="ui rounded message">{{result}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/semantic.min.js" type="text/js"></script>
+</body>
+</html>
